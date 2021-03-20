@@ -1,0 +1,15 @@
+https://create.arduino.cc/projecthub/xreef/lora-e32-device-for-arduino-esp32-or-esp8266-library-728a86
+
+https://github.com/xreef/LoRa_E32_Series_Library
+
+https://www.teachmemicro.com/e32-ttl-100-sx1278-lora-module/
+
+
+=====================
+
+Library E32 UART Modules
+
+https://github.com/KrisKasprzak/EBYTE
+https://www.youtube.com/watch?v=cmN9zEmoXjw
+https://www.youtube.com/watch?v=v9lIF33Ofok
+

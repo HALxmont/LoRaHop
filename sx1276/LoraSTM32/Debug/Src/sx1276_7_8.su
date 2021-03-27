@@ -1,0 +1,11 @@
+sx1276_7_8.c:89:6:sx1276_7_8_Standby	8	static
+sx1276_7_8.c:101:6:sx1276_7_8_Sleep	8	static
+sx1276_7_8.c:116:6:sx1276_7_8_EntryLoRa	8	static
+sx1276_7_8.c:128:6:sx1276_7_8_LoRaClearIrq	8	static
+sx1276_7_8.c:139:4:sx1276_7_8_LoRaEntryRx	16	static
+sx1276_7_8.c:174:4:sx1276_7_8_LoRaReadRSSI	16	static
+sx1276_7_8.c:189:4:sx1276_7_8_LoRaRxPacket	16	static
+sx1276_7_8.c:230:4:sx1276_7_8_LoRaEntryTx	16	static
+sx1276_7_8.c:265:4:sx1276_7_8_LoRaTxPacket	8	static
+sx1276_7_8.c:293:4:sx1276_7_8_ReadRSSI	16	static
+sx1276_7_8.c:308:6:sx1276_7_8_Config	16	static

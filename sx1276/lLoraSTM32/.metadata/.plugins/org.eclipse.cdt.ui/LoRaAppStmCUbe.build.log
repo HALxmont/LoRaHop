@@ -1,0 +1,67 @@
+16:28:34 **** Incremental Build of configuration Debug for project LoRaAppStmCUbe ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/syscall.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscall.d" -MT"Core/Src/syscall.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/syscall.o"
+arm-none-eabi-gcc "../Core/Src/user_diskio.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/user_diskio.d" -MT"Core/Src/user_diskio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/user_diskio.o"
+arm-none-eabi-gcc "../Core/Src/user_diskio_spi.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/user_diskio_spi.d" -MT"Core/Src/user_diskio_spi.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/user_diskio_spi.o"
+In file included from ../Core/Inc/ffconf.h:26,
+                 from ../Core/Inc/ff.h:27,
+                 from ../Core/Inc/ff_gen_drv.h:57,
+                 from ../Core/Src/user_diskio.c:38:
+../Core/Inc/main.h:40: warning: "DEBUG" redefined
+   40 | #define DEBUG 0
+      | 
+<command-line>: note: this is the location of the previous definition
+In file included from ../Core/Inc/ffconf.h:26,
+                 from ../Core/Inc/ff.h:27,
+                 from ../Core/Inc/ff_gen_drv.h:57,
+                 from ../Core/Inc/user_diskio_spi.h:23,
+                 from ../Core/Src/user_diskio_spi.c:28:
+../Core/Inc/main.h:40: warning: "DEBUG" redefined
+   40 | #define DEBUG 0
+      | 
+<command-line>: note: this is the location of the previous definition
+In file included from ../Core/Inc/ffconf.h:26,
+                 from ../Core/Inc/ff.h:27,
+                 from ../Core/Src/syscall.c:7:
+../Core/Inc/main.h:40: warning: "DEBUG" redefined
+   40 | #define DEBUG 0
+      | 
+<command-line>: note: this is the location of the previous definition
+arm-none-eabi-gcc -o "LoRaAppStmCUbe.elf" @"objects.list"   -mcpu=cortex-m3 -T"/home/mxmont/Documents/Universidad/Tesis/STM32/sx1276/lLoraSTM32/LoRaAppStmCUbe/STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LoRaAppStmCUbe.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+/opt/st/stm32cubeide_1.6.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.linux64_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/bin/ld: Core/Src/stm32f1xx_it.o: in function `NMI_Handler':
+/home/mxmont/Documents/Universidad/Tesis/STM32/sx1276/lLoraSTM32/LoRaAppStmCUbe/Debug/../Core/Src/stm32f1xx_it.c:73: multiple definition of `NMI_Handler'; Core/Src/stm321fxx_it.o:/home/mxmont/Documents/Universidad/Tesis/STM32/sx1276/lLoraSTM32/LoRaAppStmCUbe/Debug/../Core/Src/stm321fxx_it.c:95: first defined here
+/opt/st/stm32cubeide_1.6.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.linux64_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/bin/ld: Core/Src/stm32f1xx_it.o: in function `HardFault_Handler':
+/home/mxmont/Documents/Universidad/Tesis/STM32/sx1276/lLoraSTM32/LoRaAppStmCUbe/Debug/../Core/Src/stm32f1xx_it.c:88: multiple definition of `HardFault_Handler'; Core/Src/stm321fxx_it.o:/home/mxmont/Documents/Universidad/Tesis/STM32/sx1276/lLoraSTM32/LoRaAppStmCUbe/Debug/../Core/Src/stm321fxx_it.c:99: first defined here
+/opt/st/stm32cubeide_1.6.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.linux64_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/bin/ld: Core/Src/stm32f1xx_it.o: in function `MemManage_Handler':
+/home/mxmont/Documents/Universidad/Tesis/STM32/sx1276/lLoraSTM32/LoRaAppStmCUbe/Debug/../Core/Src/stm32f1xx_it.c:103: multiple definition of `MemManage_Handler'; Core/Src/stm321fxx_it.o:/home/mxmont/Documents/Universidad/Tesis/STM32/sx1276/lLoraSTM32/LoRaAppStmCUbe/Debug/../Core/Src/stm321fxx_it.c:105: first defined here
+/opt/st/stm32cubeide_1.6.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.linux64_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/bin/ld: Core/Src/stm32f1xx_it.o: in function `BusFault_Handler':
+/home/mxmont/Documents/Universidad/Tesis/STM32/sx1276/lLoraSTM32/LoRaAppStmCUbe/Debug/../Core/Src/stm32f1xx_it.c:118: multiple definition of `BusFault_Handler'; Core/Src/stm321fxx_it.o:/home/mxmont/Documents/Universidad/Tesis/STM32/sx1276/lLoraSTM32/LoRaAppStmCUbe/Debug/../Core/Src/stm321fxx_it.c:110: first defined here
+/opt/st/stm32cubeide_1.6.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.linux64_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/bin/ld: Core/Src/stm32f1xx_it.o: in function `UsageFault_Handler':
+/home/mxmont/Documents/Universidad/Tesis/STM32/sx1276/lLoraSTM32/LoRaAppStmCUbe/Debug/../Core/Src/stm32f1xx_it.c:133: multiple definition of `UsageFault_Handler'; Core/Src/stm321fxx_it.o:/home/mxmont/Documents/Universidad/Tesis/STM32/sx1276/lLoraSTM32/LoRaAppStmCUbe/Debug/../Core/Src/stm321fxx_it.c:115: first defined here
+/opt/st/stm32cubeide_1.6.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.linux64_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/bin/ld: Core/Src/stm32f1xx_it.o: in function `SVC_Handler':
+/home/mxmont/Documents/Universidad/Tesis/STM32/sx1276/lLoraSTM32/LoRaAppStmCUbe/Debug/../Core/Src/stm32f1xx_it.c:148: multiple definition of `SVC_Handler'; Core/Src/stm321fxx_it.o:/home/mxmont/Documents/Universidad/Tesis/STM32/sx1276/lLoraSTM32/LoRaAppStmCUbe/Debug/../Core/Src/stm321fxx_it.c:120: first defined here
+/opt/st/stm32cubeide_1.6.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.linux64_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/bin/ld: Core/Src/stm32f1xx_it.o: in function `DebugMon_Handler':
+/home/mxmont/Documents/Universidad/Tesis/STM32/sx1276/lLoraSTM32/LoRaAppStmCUbe/Debug/../Core/Src/stm32f1xx_it.c:161: multiple definition of `DebugMon_Handler'; Core/Src/stm321fxx_it.o:/home/mxmont/Documents/Universidad/Tesis/STM32/sx1276/lLoraSTM32/LoRaAppStmCUbe/Debug/../Core/Src/stm321fxx_it.c:125: first defined here
+/opt/st/stm32cubeide_1.6.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.linux64_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/bin/ld: Core/Src/stm32f1xx_it.o: in function `PendSV_Handler':
+/home/mxmont/Documents/Universidad/Tesis/STM32/sx1276/lLoraSTM32/LoRaAppStmCUbe/Debug/../Core/Src/stm32f1xx_it.c:174: multiple definition of `PendSV_Handler'; Core/Src/stm321fxx_it.o:/home/mxmont/Documents/Universidad/Tesis/STM32/sx1276/lLoraSTM32/LoRaAppStmCUbe/Debug/../Core/Src/stm321fxx_it.c:129: first defined here
+/opt/st/stm32cubeide_1.6.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.linux64_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/bin/ld: Core/Src/stm32f1xx_it.o: in function `SysTick_Handler':
+/home/mxmont/Documents/Universidad/Tesis/STM32/sx1276/lLoraSTM32/LoRaAppStmCUbe/Debug/../Core/Src/stm32f1xx_it.c:187: multiple definition of `SysTick_Handler'; Core/Src/stm321fxx_it.o:/home/mxmont/Documents/Universidad/Tesis/STM32/sx1276/lLoraSTM32/LoRaAppStmCUbe/Debug/../Core/Src/stm321fxx_it.c:90: first defined here
+/opt/st/stm32cubeide_1.6.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.linux64_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/bin/ld: Core/Src/stm32f1xx_it.o: in function `DMA1_Channel6_IRQHandler':
+/home/mxmont/Documents/Universidad/Tesis/STM32/sx1276/lLoraSTM32/LoRaAppStmCUbe/Debug/../Core/Src/stm32f1xx_it.c:236: multiple definition of `DMA1_Channel6_IRQHandler'; Core/Src/stm321fxx_it.o:/home/mxmont/Documents/Universidad/Tesis/STM32/sx1276/lLoraSTM32/LoRaAppStmCUbe/Debug/../Core/Src/stm321fxx_it.c:29: first defined here
+/opt/st/stm32cubeide_1.6.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.linux64_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/bin/ld: Core/Src/stm32f1xx_hal_msp.o: in function `HAL_UART_MspInit':
+/home/mxmont/Documents/Universidad/Tesis/STM32/sx1276/lLoraSTM32/LoRaAppStmCUbe/Debug/../Core/Src/stm32f1xx_hal_msp.c:254: undefined reference to `Error_Handler'
+/opt/st/stm32cubeide_1.6.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.linux64_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/bin/ld: /home/mxmont/Documents/Universidad/Tesis/STM32/sx1276/lLoraSTM32/LoRaAppStmCUbe/Debug/../Core/Src/stm32f1xx_hal_msp.c:298: undefined reference to `Error_Handler'
+/opt/st/stm32cubeide_1.6.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.linux64_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/bin/ld: /home/mxmont/Documents/Universidad/Tesis/STM32/sx1276/lLoraSTM32/LoRaAppStmCUbe/Debug/../Core/Src/stm32f1xx_hal_msp.c:342: undefined reference to `Error_Handler'
+/opt/st/stm32cubeide_1.6.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.linux64_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/bin/ld: /home/mxmont/Documents/Universidad/Tesis/STM32/sx1276/lLoraSTM32/LoRaAppStmCUbe/Debug/../Core/Src/stm32f1xx_hal_msp.c:352: undefined reference to `hdma_usart1_rx'
+/opt/st/stm32cubeide_1.6.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.linux64_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/bin/ld: /home/mxmont/Documents/Universidad/Tesis/STM32/sx1276/lLoraSTM32/LoRaAppStmCUbe/Debug/../Core/Src/stm32f1xx_hal_msp.c:352: undefined reference to `hdma_usart2_rx'
+/opt/st/stm32cubeide_1.6.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.linux64_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/bin/ld: /home/mxmont/Documents/Universidad/Tesis/STM32/sx1276/lLoraSTM32/LoRaAppStmCUbe/Debug/../Core/Src/stm32f1xx_hal_msp.c:352: undefined reference to `hdma_usart3_rx'
+/opt/st/stm32cubeide_1.6.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.linux64_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/bin/ld: Core/Src/stm32f1xx_it.o: in function `DMA1_Channel3_IRQHandler':
+/home/mxmont/Documents/Universidad/Tesis/STM32/sx1276/lLoraSTM32/LoRaAppStmCUbe/Debug/../Core/Src/stm32f1xx_it.c:216: undefined reference to `hdma_usart3_rx'
+/opt/st/stm32cubeide_1.6.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.linux64_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/bin/ld: Core/Src/stm32f1xx_it.o: in function `DMA1_Channel5_IRQHandler':
+/home/mxmont/Documents/Universidad/Tesis/STM32/sx1276/lLoraSTM32/LoRaAppStmCUbe/Debug/../Core/Src/stm32f1xx_it.c:230: undefined reference to `hdma_usart1_rx'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:65: LoRaAppStmCUbe.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+16:28:36 Build Failed. 32 errors, 3 warnings. (took 1s.293ms)
+

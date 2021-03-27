@@ -1,0 +1,21 @@
+!SESSION 2021-03-23 15:23:18.141 -----------------------------------------------
+eclipse.buildId=Version 1.6.0
+java.version=11.0.9.1
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2021-03-23 15:23:33.521
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-03-23 15:23:33.597
+!MESSAGE Log4j initialized with config file /home/mxmont/Documents/Universidad/Tesis/STM32/sx1276/lorabaseapp/.metadata/.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-03-23 15:23:38.487
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2021-03-23 15:23:38.954
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-23 15:30:00.369
+!MESSAGE Indexed 'LorSTM32' (31 sources, 110 headers) in 4.61 sec: 9,252 declarations; 30,240 references; 1 unresolved inclusions; 91 syntax errors; 56 unresolved names (0.14%)

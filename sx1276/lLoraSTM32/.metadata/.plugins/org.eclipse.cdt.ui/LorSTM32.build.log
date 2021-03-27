@@ -1,0 +1,10 @@
+15:37:46 **** Incremental Build of configuration Debug for project LorSTM32 ****
+make -j8 all 
+arm-none-eabi-size   LorSTM32.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31128	    516	   4508	  36152	   8d38	LorSTM32.elf
+Finished building: default.size.stdout
+ 
+
+15:37:47 Build Finished. 0 errors, 0 warnings. (took 635ms)
+

@@ -1,0 +1,88 @@
+16:33:04 **** Incremental Build of configuration Debug for project LoRaStmCube ****
+make -j8 all 
+arm-none-eabi-gcc "../Src/option/syscall.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/option/syscall.d" -MT"Src/option/syscall.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/option/syscall.o"
+arm-none-eabi-gcc "../Src/GPS.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/GPS.d" -MT"Src/GPS.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/GPS.o"
+arm-none-eabi-gcc "../Src/HardwareInit.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/HardwareInit.d" -MT"Src/HardwareInit.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/HardwareInit.o"
+arm-none-eabi-gcc "../Src/LoraApp.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/LoraApp.d" -MT"Src/LoraApp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/LoraApp.o"
+arm-none-eabi-gcc "../Src/diskio.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/diskio.d" -MT"Src/diskio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/diskio.o"
+arm-none-eabi-gcc "../Src/fatfs.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/fatfs.d" -MT"Src/fatfs.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/fatfs.o"
+arm-none-eabi-gcc "../Src/ff.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/ff.d" -MT"Src/ff.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/ff.o"
+arm-none-eabi-gcc "../Src/ff_gen_drv.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/ff_gen_drv.d" -MT"Src/ff_gen_drv.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/ff_gen_drv.o"
+In file included from ../Src/HardwareInit.c:1:
+../Inc/HardwareInit.h:3:9: fatal error: stm32f1xx.h: No such file or directory
+    3 | #include"stm32f1xx.h"
+      |         ^~~~~~~~~~~~~
+compilation terminated.
+In file included from ../Inc/stm32f1xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Inc/ffconf.h:26,
+                 from ../Inc/ff.h:27,
+                 from ../Inc/ff_gen_drv.h:57,
+                 from ../Src/diskio.c:60:
+../Inc/stm32f1xx_hal_conf.h:237:10: fatal error: stm32f1xx_hal_rcc.h: No such file or directory
+  237 | #include "stm32f1xx_hal_rcc.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:60: Src/HardwareInit.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Src/subdir.mk:66: Src/diskio.o] Error 1
+In file included from ../Inc/stm32f1xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Inc/ffconf.h:26,
+                 from ../Inc/ff.h:27,
+                 from ../Src/ff.c:126:
+../Inc/stm32f1xx_hal_conf.h:237:10: fatal error: stm32f1xx_hal_rcc.h: No such file or directory
+  237 | #include "stm32f1xx_hal_rcc.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from ../Inc/stm32f1xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Inc/ffconf.h:26,
+                 from ../Inc/ff.h:27,
+                 from ../Inc/fatfs.h:26,
+                 from ../Src/fatfs.c:19:
+../Inc/stm32f1xx_hal_conf.h:237:10: fatal error: stm32f1xx_hal_rcc.h: No such file or directory
+  237 | #include "stm32f1xx_hal_rcc.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:70: Src/ff.o] Error 1
+make: *** [Src/subdir.mk:68: Src/fatfs.o] Error 1
+In file included from ../Inc/stm32f1xx_hal.h:30,
+                 from ../Inc/GPS.h:5,
+                 from ../Src/GPS.c:2:
+../Inc/stm32f1xx_hal_conf.h:237:10: fatal error: stm32f1xx_hal_rcc.h: No such file or directory
+  237 | #include "stm32f1xx_hal_rcc.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:58: Src/GPS.o] Error 1
+In file included from ../Inc/stm32f1xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Inc/ffconf.h:26,
+                 from ../Inc/ff.h:27,
+                 from ../Inc/ff_gen_drv.h:57,
+                 from ../Src/ff_gen_drv.c:48:
+../Inc/stm32f1xx_hal_conf.h:237:10: fatal error: stm32f1xx_hal_rcc.h: No such file or directory
+  237 | #include "stm32f1xx_hal_rcc.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+In file included from ../Inc/stm32f1xx_hal.h:30,
+                 from ../Inc/main.h:31,
+                 from ../Inc/ffconf.h:26,
+                 from ../Inc/ff.h:27,
+                 from ../Src/option/syscall.c:7:
+../Inc/stm32f1xx_hal_conf.h:237:10: fatal error: stm32f1xx_hal_rcc.h: No such file or directory
+  237 | #include "stm32f1xx_hal_rcc.h"
+      |          ^~~~~~~~~~~~~~~~~~~~~
+In file included from ../Src/LoraApp.c:4:
+../Inc/LoraApp.h:3:9: fatal error: stm32f1xx.h: No such file or directory
+    3 | #include"stm32f1xx.h"
+      |         ^~~~~~~~~~~~~
+compilation terminated.
+compilation terminated.
+make: *** [Src/subdir.mk:72: Src/ff_gen_drv.o] Error 1
+make: *** [Src/option/subdir.mk:19: Src/option/syscall.o] Error 1
+make: *** [Src/subdir.mk:62: Src/LoraApp.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+16:33:05 Build Failed. 17 errors, 0 warnings. (took 744ms)
+

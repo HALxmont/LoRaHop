@@ -1,0 +1,8 @@
+GPS.c:21:8:convertDegMinToDecDeg	40	static
+GPS.c:36:6:GPS_Init	8	static
+GPS.c:44:6:GPS_CallBack	8	static
+GPS.c:55:6:GPS_Process	304	static
+GPS.c:212:6:GPS_Delimit	40	static
+GPS.c:226:6:GPS_UART_IDLECallback	16	static
+GPS.c:244:6:GPS_MakeString	120	static,ignoring_inline_asm
+GPS.c:297:6:DMStoDecimal	80	static

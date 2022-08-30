@@ -11,3 +11,5 @@ Communiation flow was:
 ROOT NODE -> FARO NODE -> END NODE -> FARO NODE -> ROOT NODE
 
 Additionaly i include some libraries for sx1278 LoRa module for future works.
+
+Hola
